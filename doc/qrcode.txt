@@ -16,6 +16,7 @@ CONTENTS                                                     *qrcode-contents*
     3. Requirements ............................. |qrcode-requirements|
     4. License .................................. |qrcode-license|
     5. Known bugs ............................... |qrcode-known-bugs|
+    6. Credit ................................... |qrcode-credit|
 
 ==============================================================================
 1. Introduction                                 *qrcode* *qrcode-introduction*
@@ -56,13 +57,21 @@ You can install rQRCode by the command:
 4. License                                                    *qrcode-license*
 
 MIT License
-
 http://opensource.org/licenses/MIT
 
 ==============================================================================
 5. Known bugs                                              *qrcode-known-bugs*
 
 None.
+
+==============================================================================
+6. Credit                                                      *qrcode-credit*
+
+QR code is trademarked by Denso Wave inc.
+http://www.qrcode.com/en/
+
+rQRCode
+https://github.com/whomwah/rqrcode
 
 ==============================================================================
 vim:tw=78:sw=4:ts=8:ft=help:norl:
