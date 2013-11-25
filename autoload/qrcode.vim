@@ -11,7 +11,7 @@ function! qrcode#generate()
 
 	if strlen(l:qrcode) > 0
 		call s:prepare_buffer()
-		call append(0, l:qrcode)
+		call append(0, split(l:qrcode, '\n', 1))
 		set filetype=qrcode
 
 		call s:finish_buffer()
@@ -37,7 +37,7 @@ function! s:get_qrcode(text)
 	margin_line = ' ' * lines[0].size
 	lines.unshift(margin_line)
 	lines.push(margin_line)
-	VIM.command('let l:qrcode = "' + lines.join("\n") +'"')
+	VIM.command('let l:qrcode = "' + lines.join('\n') +'"')
 EOF
 
 	return l:qrcode
