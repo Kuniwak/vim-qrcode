@@ -6,20 +6,23 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! qrcode#generate()
-	call s:prepare_buffer()
-
 	let l:selected = s:get_selected()
 	let l:qrcode = s:get_qrcode(l:selected)
-	call append(0, l:qrcode)
-	set filetype=qrcode
 
-	call s:finish_buffer()
+	if strlen(l:qrcode) > 0
+		call s:prepare_buffer()
+		call append(0, l:qrcode)
+		set filetype=qrcode
+
+		call s:finish_buffer()
+	endif
 endfunction
 
 
 function! s:get_qrcode(text)
-	if has('ruby')
+	if !has('ruby')
 		throw "vim-qrcode requires to enable a ruby interface."
+		return ''
 	endif
 
 	ruby << EOF
@@ -36,6 +39,8 @@ function! s:get_qrcode(text)
 	lines.push(margin_line)
 	VIM.command('let l:qrcode = "' + lines.join("\n") +'"')
 EOF
+
+	return l:qrcode
 endfunction
 
 
