@@ -5,7 +5,7 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! qrcode#generate()
+function! qrcode#generate() range
 	let l:selected = s:get_selected()
 	let l:qrcode = s:get_qrcode(l:selected)
 
