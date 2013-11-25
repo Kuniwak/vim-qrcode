@@ -3,7 +3,7 @@ qrcode.txt	For Vim version 7.4  Last change: 2013 Sep 26
 
        ______     ______     ______     ______     _____     ______
       /\  __ \   /\  == \   /\  ___\   /\  __ \   /\  __'.  /\  ___\
-      \ \ \/\_\  \ \  __<   \ \ \____  \ \ \/\ \  \ \ \/\ \ \ \  __\
+      \ \ \/\.\  \ \  __<   \ \ \____  \ \ \/\ \  \ \ \/\ \ \ \  __\
        \ \___\_\  \ \_\ \_\  \ \_____\  \ \_____\  \ \___.+  \ \_____\
         \/___/_/   \/_/ /_/   \/_____/   \/_____/   \/___.'   \/_____/
 
@@ -16,7 +16,6 @@ CONTENTS                                                     *qrcode-contents*
     3. Requirements ............................. |qrcode-requirements|
     4. License .................................. |qrcode-license|
     5. Known bugs ............................... |qrcode-known-bugs|
-
 
 ==============================================================================
 1. Introduction                                 *qrcode* *qrcode-introduction*
@@ -38,8 +37,8 @@ Display a text by QRCode command:
 >
     :QRCode Lorem ipsum dolor sit amet.
 
-And an URL can be displayed (many smart phones can recognize an URL, so it
-makes easy to open the URL by the smart phones):
+And an URL can be displayed (many smart phones can recognize an URL style QR
+code, so it makes easy to open the URL by the smart phones):
 >
     :QRCode https://www.vim.org
 
