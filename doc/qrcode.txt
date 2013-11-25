@@ -1,0 +1,69 @@
+qrcode.txt	For Vim version 7.4  Last change: 2013 Sep 26
+
+
+       ______     ______     ______     ______     _____     ______
+      /\  __ \   /\  == \   /\  ___\   /\  __ \   /\  __'.  /\  ___\
+      \ \ \/\_\  \ \  __<   \ \ \____  \ \ \/\ \  \ \ \/\ \ \ \  __\
+       \ \___\_\  \ \_\ \_\  \ \_____\  \ \_____\  \ \___.+  \ \_____\
+        \/___/_/   \/_/ /_/   \/_____/   \/_____/   \/___.'   \/_____/
+
+
+==============================================================================
+CONTENTS                                                     *qrcode-contents*
+
+    1. Introduction ............................. |qrcode-introduction|
+    2. Usage .................................... |qrcode-usage|
+    3. Requirements ............................. |qrcode-requirements|
+    4. License .................................. |qrcode-license|
+    5. Known bugs ............................... |qrcode-known-bugs|
+
+
+==============================================================================
+1. Introduction                                 *qrcode* *qrcode-introduction*
+
+QRCode provides a way to display a QR code on your vim. The QR code can have a
+content limited to 140 characters. You can display any content by execute a
+command with a seleced text or a text as an argument.
+
+The generated QRCode will be displayed on a new buffer.
+
+==============================================================================
+2. Usage                                                        *qrcode-usage*
+
+QRCode will get a selected text by the QRCode command:
+>
+    :QRCode
+
+Display a text by QRCode command:
+>
+    :QRCode Lorem ipsum dolor sit amet.
+
+And an URL can be displayed (many smart phones can recognize an URL, so it
+makes easy to open the URL by the smart phones):
+>
+    :QRCode https://www.vim.org
+
+==============================================================================
+3. Requirements                                          *qrcode-requirements*
+
+QRCode requires a Ruby interface (|+ruby|) and a rQRCode module that is a QR
+code generator implemented by ruby (https://github.com/whomwah/rqrcode).
+
+You can install rQRCode by the command:
+>
+    gem install rqrcode
+
+==============================================================================
+4. License                                                    *qrcode-license*
+
+MIT License
+
+http://opensource.org/licenses/MIT
+
+==============================================================================
+5. Known bugs                                              *qrcode-known-bugs*
+
+None.
+
+==============================================================================
+vim:tw=78:sw=4:ts=8:ft=help:norl:
