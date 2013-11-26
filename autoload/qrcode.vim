@@ -64,7 +64,7 @@ function! s:prepare_buffer()
 				\ || line('$') != 1
 				\ || getline(1) != ''
 	if needs_new_buffer
-		new
+		tabnew
 	endif
 endfunction
 
