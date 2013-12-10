@@ -22,7 +22,7 @@ CONTENTS                                                     *qrcode-contents*
 1. Introduction                                 *qrcode* *qrcode-introduction*
 
 QRCode provides a way to display a QR code on your vim. The QR code can have a
-content limited to 140 characters. You can display any content by execute a
+content limited to 140 characters. You can display any content by executing a
 command with a seleced text or a text as an argument.
 
 The generated QRCode will be displayed on a new buffer.
