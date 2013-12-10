@@ -24,7 +24,7 @@ Usage
 
 QRCode will get a selected text by the QRCode command:
 
-    :QRCode
+    :'<,'>QRCode
 
 Display a text by QRCode command:
 
