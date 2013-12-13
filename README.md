@@ -16,7 +16,7 @@ The generated QRCode will be displayed on a new tab.
 Screenshot
 ----------
 
-![Screenshot of vim-QRCode](http://cdn-ak.f.st-hatena.com/images/fotolife/d/devorgachem/20131126/20131126072055.png)
+![Screenshot of vim-QRCode](https://raw.github.com/OrgaChem/vim-qrcode/images/screenshots/screenshot.png)
 
 
 Usage
